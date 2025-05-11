@@ -1,0 +1,14 @@
+[workspace]
+authors = ["Jørgen Riseth <jnriseth@gmail.com>"]
+channels = ["conda-forge"]
+name = "testpixi"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+numpy = ">=2.2.5,<3"
+yaml = ">=0.2.5,<0.3"
+pyyaml = ">=6.0.2,<7"
+requests = ">=2.32.3,<3"
