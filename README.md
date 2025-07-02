@@ -1,5 +1,8 @@
 # TSD `conda` Channel Creator
 
+**Disclaimer**: This is not an official TSD repository, and only something I have created to simplify my own workflow with TSD and conda environments.
+
+
 This repository provides tools for maintaining an offline `conda` channel for
 use on TSD. It relies on lock-files created by `pixi` package manager, to
 download desired `conda`-packages into a `conda`-channel structure, which may be
