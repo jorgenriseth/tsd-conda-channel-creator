@@ -136,7 +136,7 @@ Then `conda` should hopefully be able to install packages contained in the
 - If you get error messages telling you that the sqlite database is locked, you
   can try to limit the number of threads by using the "--threads"-argument.
   Locked-database issues seem to come from multiple threads trying to write to
-  the database simultaneously.
+  the database simultaneously, combined with slow IO on TSD.
 - If you get an error `sqlite3.OperationalError: disk I/O error`, I have not
   managed to find any workaround. However, I have gotten the channel to work
   with index run from local laptop, so I recommend moving the
