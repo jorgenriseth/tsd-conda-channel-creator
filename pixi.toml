@@ -1,14 +1,65 @@
 [workspace]
 authors = ["Jørgen Riseth <jnriseth@gmail.com>"]
-channels = ["conda-forge"]
-name = "testpixi"
+channels = [
+  "conda-forge",
+  "conda-forge/label/fenics-dev",
+  "bioconda",
+  "jorgenriseth",
+  "https://fsl.fmrib.ox.ac.uk/fsldownloads/fslconda/public",
+]
+name = "tsd-conda-channel-creator"
 platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
 
 [dependencies]
-numpy = ">=2.2.5,<3"
-yaml = ">=0.2.5,<0.3"
-pyyaml = ">=6.0.2,<7"
-requests = ">=2.32.3,<3"
+vtk = "*"
+simple-mri = "*"
+stackview = "*"
+scikit-image = "*"
+meshio = "*"
+nibabel = "*"
+pint = "*"
+pydicom = "*"
+pymeshfix = "*"
+scipy = "*"
+click = "*"
+libxml2 = "*"
+libxcb = "*"
+conda-build = "<24"
+numpy = "*"
+yaml = "*"
+pyyaml = "*"
+requests = "*"
+snakemake = "<9"
+svmtk = "*"
+fenics = "*"
+h5py = "*"
+dcm2niix = "*"
+matplotlib = "*"
+jupyter = "*"
+pydantic-settings = "*"
+notebook = "<7"
+mpi4py = "*"
+openmpi = "*"
+snakemake-executor-plugin-cluster-generic = "*"
+pyvista = "*"
+trame = "*"
+tqdm = "*"
+loguru = "*"
+icu = "*"
+libzlib = ">=1.2.13,<1.3"
+panta-rhei = "*"
+seaborn = "*"
+apptainer = "*"
+sqlite = "*"
+jupyter_server = "<2"
+fsl-fdt = "*"
+fsl-eddy = "*"
+fsl-topup = "*"
+patsy = "*"
+statsmodels = "*"
+squashfuse = "*"
+gocryptfs = "*"
+libiconv = "==1.17"
